@@ -126,5 +126,111 @@ public class Main {
         System.out.println("Temperatura almacenada: " + termometro.getCelsius());
         System.out.println("Temperatura Fahrenheit: " + termometro.getFahrenheit());
 
+
+
+        //////////////////////////////////////////////////////
+        // EJERCICIO 7: RELOJ
+        //////////////////////////////////////////////////////
+
+        System.out.println("\n===== EJERCICIO 7: RELOJ =====");
+
+        Reloj reloj = new Reloj();
+
+        reloj.setHora(14);
+        reloj.setMinuto(35);
+        reloj.setSegundo(20);
+
+        System.out.println("Hora: " + reloj.mostrarHora());
+
+        System.out.println("\nProbando valores incorrectos:");
+
+        reloj.setHora(30);
+        reloj.setMinuto(70);
+        reloj.setSegundo(80);
+
+        System.out.println("Hora: " + reloj.mostrarHora());
+
+
+
+        //////////////////////////////////////////////////////
+        // EJERCICIO 8: CONTACTO
+        //////////////////////////////////////////////////////
+
+        System.out.println("\n===== EJERCICIO 8: CONTACTO =====");
+
+        Contacto contacto = new Contacto();
+
+        contacto.setNombre("Carlos Lopez");
+        contacto.setTelefono("55123456");
+        contacto.setEmail("carlos@gmail.com");
+
+        contacto.mostrarContacto();
+
+        System.out.println();
+
+        Contacto contacto2 = new Contacto();
+
+        contacto2.setNombre("Maria Perez");
+        contacto2.setTelefono("12345");
+        contacto2.setEmail("mariagmail.com");
+
+        contacto2.mostrarContacto();
+
+
+        //////////////////////////////////////////////////////
+        // EJERCICIO 9: JUGADOR
+        //////////////////////////////////////////////////////
+
+        System.out.println("\n===== EJERCICIO 9: JUGADOR =====");
+
+        Jugador jugador = new Jugador();
+
+        jugador.setNombre("Carlos");
+        jugador.setPuntajeMaximo(100);
+
+        jugador.actualizarPuntaje(80);
+
+        System.out.println("Jugador: " + jugador.getNombre());
+        System.out.println("Puntaje actual: " + jugador.getPuntajeActual());
+        System.out.println("Puntaje maximo: " + jugador.getPuntajeMaximo());
+
+        System.out.println("\nNuevo puntaje de 150:");
+        jugador.actualizarPuntaje(150);
+
+        System.out.println("Puntaje actual: " + jugador.getPuntajeActual());
+        System.out.println("Puntaje maximo: " + jugador.getPuntajeMaximo());
+
+        System.out.println("\nPrueba con puntaje negativo:");
+        jugador.actualizarPuntaje(-20);
+
+        System.out.println("Puntaje actual: " + jugador.getPuntajeActual());
+        System.out.println("Puntaje maximo: " + jugador.getPuntajeMaximo());
+
+
+        //////////////////////////////////////////////////////
+        // EJERCICIO 10: FACTURA
+        //////////////////////////////////////////////////////
+
+        System.out.println("\n===== EJERCICIO 10: FACTURA =====");
+
+        Factura factura = new Factura();
+
+        factura.setCodigoFactura("F001");
+        factura.setDescripcion("Monitor LED");
+        factura.setCantidad(2);
+        factura.setPrecioUnitario(1250);
+
+        factura.mostrarFactura();
+
+        System.out.println();
+
+        Factura factura2 = new Factura();
+
+        factura2.setCodigoFactura("F002");
+        factura2.setDescripcion("Teclado Gamer");
+        factura2.setCantidad(-5);
+        factura2.setPrecioUnitario(-300);
+
+        factura2.mostrarFactura();
     }
 }
