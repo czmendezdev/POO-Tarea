@@ -101,5 +101,63 @@ public class Main {
         System.out.println("\n--- PRODUCTO PERECEDERO VENCIDO ---");
         productoPerecedero2.mostrar();
 
+        System.out.println("\n===== EJERCICIO 4: VEHICULO =====");
+
+        Vehiculo vehiculo = new Vehiculo(
+                "Toyota",
+                "Corolla",
+                2020
+        );
+
+        Carro carro = new Carro(
+                "Honda",
+                "Civic",
+                2023,
+                4
+        );
+
+        System.out.println("\n--- VEHICULO ---");
+        vehiculo.mostrar();
+
+        System.out.println("\n--- CARRO ---");
+        carro.mostrar();
+
+        System.out.println("\n===== EJERCICIO 5: EMPLEADOS =====");
+
+        Empleado empleado = new Empleado(
+                "Luis",
+                3500
+        );
+
+        Gerente gerente = new Gerente(
+                "Ana",
+                6500,
+                "Recursos Humanos"
+        );
+
+        System.out.println("\n--- EMPLEADO ---");
+        empleado.mostrar();
+
+        System.out.println("\n--- GERENTE ---");
+        gerente.mostrar();
+
+
+        System.out.println("\n===== EJERCICIO 6: ANIMALES =====");
+
+        Animal animal = new Animal("Animal");
+
+        Perro perro = new Perro(
+                "Firulais",
+                "Pastor Alemán"
+        );
+
+        System.out.println("\n--- ANIMAL ---");
+        animal.hacerSonido();
+
+        System.out.println("\n--- PERRO ---");
+        perro.hacerSonido();
+
+
+        
     }
 }
