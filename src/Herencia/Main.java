@@ -158,6 +158,81 @@ public class Main {
         perro.hacerSonido();
 
 
-        
+
+        System.out.println("\n===== EJERCICIO 7: MOTO =====");
+
+        Moto moto = new Moto(
+                "Yamaha",
+                "FZ",
+                2024,
+                150
+        );
+
+        System.out.println("\n--- MOTO ---");
+        moto.mostrar();
+
+
+
+        System.out.println("\n===== EJERCICIO 8: COMPUTADORAS =====");
+
+        Computadora computadora = new Computadora(
+                "Dell",
+                "Intel Core i5",
+                8
+        );
+
+        Laptop laptop = new Laptop(
+                "Lenovo",
+                "Intel Core i7",
+                16,
+                15.6
+        );
+
+        System.out.println("\n--- COMPUTADORA ---");
+        computadora.mostrar();
+
+        System.out.println("\n--- LAPTOP ---");
+        laptop.mostrar();
+
+
+
+        System.out.println("\n===== EJERCICIO 9: ELECTRODOMESTICOS =====");
+
+        Electrodomestico electrodomestico = new Electrodomestico(
+                "LG",
+                800
+        );
+
+        Refrigeradora refrigeradora = new Refrigeradora(
+                "Samsung",
+                1200,
+                450
+        );
+
+        System.out.println("\n--- ELECTRODOMESTICO ---");
+        electrodomestico.mostrar();
+
+        System.out.println("\n--- REFRIGERADORA ---");
+        refrigeradora.mostrar();
+
+
+        System.out.println("\n===== EJERCICIO 10: INSTRUMENTOS =====");
+
+        Instrumento instrumento = new Instrumento(
+                "Piano",
+                "Teclas"
+        );
+
+        Guitarra guitarra = new Guitarra(
+                "Guitarra Yamaha",
+                "Cuerda",
+                6
+        );
+
+        System.out.println("\n--- INSTRUMENTO ---");
+        instrumento.mostrar();
+
+        System.out.println("\n--- GUITARRA ---");
+        guitarra.mostrar();
     }
 }
